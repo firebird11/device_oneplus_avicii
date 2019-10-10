@@ -46,6 +46,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-aosp
 
+# Component Override
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/sysconfig/component-overrides.xml
+
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 -include $(LOCAL_PATH)/product_props.mk
