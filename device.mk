@@ -29,6 +29,10 @@ $(call inherit-product, vendor/oneplus/avicii/avicii-vendor.mk)
 # Kernel Headers
 PRODUCT_KERNEL_HEADERS := $(LOCAL_PATH)/kernel-headers
 
+# World APN list
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/apns-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/apns-conf.xml
+
 # Kernel
 LOCAL_KERNEL := $(LOCAL_PATH)/prebuilt/Image
 LOCAL_DTB := $(LOCAL_PATH)/prebuilt/dtb.img
