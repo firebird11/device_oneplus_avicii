@@ -20,3 +20,9 @@ ifneq ($(filter avicii,$(TARGET_DEVICE)),)
   subdir_makefiles=$(call first-makefiles-under,$(LOCAL_PATH))
   $(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))
 endif
+
+$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr: $(wildcard $(PRODUCT_KERNEL_HEADERS)/*)
+	rm -rf $@
+	mkdir -p $@/include
+	cp -a $(PRODUCT_KERNEL_HEADERS)/. $@/include
+

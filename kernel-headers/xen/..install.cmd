@@ -1,0 +1,1 @@
+cmd_usr/include/xen/.install := /bin/bash /home/akshay/pep/kernel/oneplus/sm7250/scripts/headers_install.sh ./usr/include/xen /home/akshay/pep/kernel/oneplus/sm7250/include/uapi/xen privcmd.h gntalloc.h gntdev.h evtchn.h; /bin/bash /home/akshay/pep/kernel/oneplus/sm7250/scripts/headers_install.sh ./usr/include/xen ./include/generated/uapi/xen ; touch usr/include/xen/.install

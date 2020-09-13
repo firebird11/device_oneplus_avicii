@@ -1,0 +1,1 @@
+cmd_usr/include/scsi/ufs/.install := /bin/bash /home/akshay/pep/kernel/oneplus/sm7250/scripts/headers_install.sh ./usr/include/scsi/ufs /home/akshay/pep/kernel/oneplus/sm7250/include/uapi/scsi/ufs ufs.h ioctl.h; /bin/bash /home/akshay/pep/kernel/oneplus/sm7250/scripts/headers_install.sh ./usr/include/scsi/ufs ./include/generated/uapi/scsi/ufs ; touch usr/include/scsi/ufs/.install

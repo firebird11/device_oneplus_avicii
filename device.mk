@@ -26,6 +26,9 @@ $(call inherit-product, vendor/oneplus/avicii/avicii-vendor.mk)
 # GoogleCamera
 #$(call inherit-product, packages/apps/GoogleCamera/config.mk)
 
+# Kernel Headers
+PRODUCT_KERNEL_HEADERS := $(LOCAL_PATH)/kernel-headers
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
