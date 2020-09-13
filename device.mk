@@ -29,6 +29,14 @@ $(call inherit-product, vendor/oneplus/avicii/avicii-vendor.mk)
 # Kernel Headers
 PRODUCT_KERNEL_HEADERS := $(LOCAL_PATH)/kernel-headers
 
+# Kernel
+LOCAL_KERNEL := $(LOCAL_PATH)/prebuilt/Image
+LOCAL_DTB := $(LOCAL_PATH)/prebuilt/dtb.img
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel \
+    $(LOCAL_DTB):dtb.img
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
