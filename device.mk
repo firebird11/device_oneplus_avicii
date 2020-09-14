@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, vendor/oneplus/avicii/avicii-vendor.mk)
 
 # GoogleCamera
-$(call inherit-product, packages/apps/GoogleCamera/config.mk)
+#$(call inherit-product, packages/apps/GoogleCamera/config.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -122,8 +122,8 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 # DeviceSettings
-PRODUCT_PACKAGES += \
-    DeviceSettings
+#PRODUCT_PACKAGES += \
+#    DeviceSettings
 
 # Display
 PRODUCT_PACKAGES += \
