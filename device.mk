@@ -219,6 +219,13 @@ PRODUCT_PACKAGES += \
 #    NfcNci \
 #    Tag \
 
+# EmptyFile
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/EmptyFile:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/bin/hw/android.hardware.nfc@1.2-service \
+    $(LOCAL_PATH)/prebuilt/EmptyFile:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/init/android.hardware.nfc@1.2-service.rc \
+    $(LOCAL_PATH)/prebuilt/EmptyFile:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/bin/hw/android.hardware.secure_element@1.0-service \
+    $(LOCAL_PATH)/prebuilt/EmptyFile:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/init/android.hardware.secure_element@1.0-service.rc
+
 # Power
 #PRODUCT_PACKAGES += \
 #    android.hardware.power@1.2-service.oneplus_lito
