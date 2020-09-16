@@ -1,4 +1,4 @@
-#
+ #
 # Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,6 +37,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=OnePlusNord \
     PRODUCT_NAME=OnePlusNord \
-    PRIVATE_BUILD_DISC="Nord_IND-user 10 QKQ1.200412.002 2007312126 release-keys"
+    PRIVATE_BUILD_DISC="coral-user 11 RP1A.200720.009 6720564 release-keys"
 
 BUILD_FINGERPRINT := "google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys"
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
