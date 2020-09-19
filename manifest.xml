@@ -201,12 +201,12 @@
     <hal format="hidl">
         <name>android.hardware.nfc</name>
         <transport>hwbinder</transport>
-        <version>1.2</version>
+        <version>2.0</version>
         <interface>
             <name>INfc</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.2::INfc/default</fqname>
+        <fqname>@2.0::INfc/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.power</name>
