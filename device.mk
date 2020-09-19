@@ -162,8 +162,8 @@ PRODUCT_PACKAGES += \
     init.safailnet.rc
 
 # DeviceSettings
-#PRODUCT_PACKAGES += \
-#    DeviceSettings
+PRODUCT_PACKAGES += \
+    DeviceSettings
 
 # Display
 PRODUCT_PACKAGES += \
