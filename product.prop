@@ -4,3 +4,7 @@ ro.config.vc_call_vol_steps=7
 
 # Priv-app permission
 ro.control_privapp_permissions=log
+
+# Blur
+ro.sf.blurs_are_expensive=1
+ro.surface_flinger.supports_background_blur=1
