@@ -23,8 +23,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oneplus/avicii/avicii-vendor.mk)
 
+# Gapps
+$(call inherit-product-if-exists, vendor/google/gms/config.mk)
+
+# Pixel components
+$(call inherit-product-if-exists, vendor/google/pixel/config.mk)
+
 # GoogleCamera
-#$(call inherit-product, packages/apps/GoogleCamera/config.mk)
+$(call inherit-product-if-exists, packages/apps/GoogleCamera/config.mk)
 
 # Kernel Headers
 PRODUCT_KERNEL_HEADERS := $(LOCAL_PATH)/kernel-headers
