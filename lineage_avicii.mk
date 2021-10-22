@@ -22,13 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/avicii/device.mk)
 
 # Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# PixelExperience Properties
-TARGET_USES_AOSP_RECOVERY := true
-TARGET_USES_CUSTOM_AVB_KEY := true
-
-PRODUCT_NAME := aosp_avicii
+PRODUCT_NAME := lineage_avicii
 PRODUCT_DEVICE := avicii
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
